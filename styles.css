@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    font-size: 16px
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ddd;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+/*------------home------------*/
+
+.home {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 15vh;
+}
+
+.home .img-name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.home img{
+    height: 50vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.contract {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contract a {
+    text-decoration: none;
+    color: black;
+}
+
+.contract .contract-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contract-container:hover {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+}
+.contract img {
+    height: 4rem;
+}
+
+.contract p {
+    font-size: 1.5em;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links initially */
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show links when toggled */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+
+    /*-----------home------------*/
+    .home {
+        width: 90%;
+        height: 100%;
+    }
+}
