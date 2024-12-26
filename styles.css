@@ -207,8 +207,101 @@ body {
     border-radius: 15px;
 }
 
+.about-me-container-school {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.about-me-container-hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.in-school-container {
+    display: flex;
+    justify-content: center;
+}
+
+.in-school-container img {
+    height: 15vh;
+}
+
+.about-me-container > div {
+    transition: all 0.3s ease-in-out;
+}
+
+.about-me-container > div:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+.in-school-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
 .about-me-container h3 {
     font-size: 2rem;
+    text-align: center;
+}
+
+/*----------skill---------*/
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 4em;
+    margin-top: 15vh;
+}
+
+.skill h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.skill .skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+.skill .skill-container img {
+    width: 6em;
+}
+
+.skill .skill-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill .skill-text:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+.skill p {
+    font-size: 1.125em;
     text-align: center;
 }
 /* Mobile Styles */
@@ -242,5 +335,7 @@ body {
     }
 
     /*----------about me----------*/
-
+    .about-me-container-school {
+        transform: scale(0.9);
+    }
 }
