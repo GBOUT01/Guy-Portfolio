@@ -86,6 +86,12 @@ body {
     height: 50vh;
     border-radius: 50%;
     object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.home img:hover {
+    transform: scale(1.3);
+    filter: brightness(50%);
 }
 
 .home h1 {
@@ -321,46 +327,21 @@ body {
     gap: 1em;
 }
 
+.exp p {
+    text-align: center;
+}
+
 .exp h2 {
     font-size: 2.5em;
     text-align: center;
 }
 
-.exp .exp-1 {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 2px solid black;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
-.exp-1-img-container {
-    display: flex;
-    justify-content: center;
-    gap: 5em;
-    padding: 1em;
-}
-
-.exp-1 h3 {
+.exp h3 {
+    font-size: 1.5rem;
     text-align: center;
-    font-size: 1.125em;
-    margin-bottom: 3rem;
 }
-.exp-1-img-container img {
-    width: 20em;
-    border-radius: 15px;
-}
-
-.exp-1 p {
-    font-size: 1em;
-}
-
-.exp .exp-2 {
-    width: fit-content;
+.exp-1, .exp-2, .exp-3, .exp-4 {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -371,97 +352,58 @@ body {
     border-radius: 15px;
 }
 
-.exp-2-img-container {
+.exp-1-img-container, .exp-2-img-container, .exp-3-img-container {
     display: flex;
     justify-content: center;
-    gap: 5em;
-    padding: 1em;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.exp-2 h3 {
-    text-align: center;
-    font-size: 1.125em;
-    margin-bottom: 3rem;
-}
-.exp-2-img-container img {
-    width: 20em;
-    border-radius: 15px;
-}
-
-.exp-2 p {
-    font-size: 1em;
-}
-
-.exp .exp-3 {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 2px solid black;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
-.exp-3-img-container {
-    display: flex;
-    justify-content: center;
-    gap: 5em;
-    padding: 1em;
-}
-
-.exp-3 h3 {
-    text-align: center;
-    font-size: 1.125em;
-    margin-bottom: 3rem;
-}
-.exp-3-img-container img {
-    width: 20em;
-    border-radius: 15px;
-}
-
-.exp-3 p {
-    font-size: 1em;
-}
-
-.exp .exp-4 {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 2px solid black;
-    padding: 2rem;
+.exp img {
+    width: 40%;
     border-radius: 15px;
 }
 
 .exp-4-img-container {
+    width: 90%;
     display: grid;
-    grid-template-columns: auto auto; /* Two equal columns */
-    align-items: center; /* Vertically aligns the images */
-    gap: 2em; /* Space between images */
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); /* Flexible grid layout */
+    gap: 0; /* Space between images */
+    align-items: center; /* Aligns images vertically */
+    justify-items: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-
-.exp-4 h3 {
-    text-align: center;
-    font-size: 1.125em;
-    margin-bottom: 3rem;
 }
 
 .exp-4-img-container img {
-    height: 20em; /* Or use the height of your landscape image */
-    object-fit: cover;
-  }
-
-.exp-4 p {
-    font-size: 1em;
+    width: 70%; /* Make images responsive to their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    object-fit: fill; /* Ensure images fit neatly inside their grid area */
 }
 
-.footer h2 {
+.exp a {
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out all;
+}
+
+.exp a:hover {
+    transform: scale(1.3);
+    color: black;
+    background-color: white;
+}
+.footer p {
     text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -499,11 +441,7 @@ body {
     }
 
     /*----------exp----------*/
-    .exp-1-img-container, .exp-2-img-container, .exp-3-img-container, .exp-4-img-container {
-        display: grid;
-        grid-template-columns: auto auto; /* Two equal columns */
-        align-items: center; /* Vertically aligns the images */
-        gap: 2em; /* Space between images */
-        margin-bottom: 1rem;
+    .exp p {
+        font-size: 0.7em;
     }
 }
