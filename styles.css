@@ -309,6 +309,160 @@ body {
     font-size: 1.125em;
     text-align: center;
 }
+
+/*------------exp------------*/
+.exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 15vh;
+    gap: 1em;
+}
+
+.exp h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.exp .exp-1 {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.exp-1-img-container {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 1em;
+}
+
+.exp-1 h3 {
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 3rem;
+}
+.exp-1-img-container img {
+    width: 20em;
+    border-radius: 15px;
+}
+
+.exp-1 p {
+    font-size: 1em;
+}
+
+.exp .exp-2 {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.exp-2-img-container {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 1em;
+}
+
+.exp-2 h3 {
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 3rem;
+}
+.exp-2-img-container img {
+    width: 20em;
+    border-radius: 15px;
+}
+
+.exp-2 p {
+    font-size: 1em;
+}
+
+.exp .exp-3 {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.exp-3-img-container {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 1em;
+}
+
+.exp-3 h3 {
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 3rem;
+}
+.exp-3-img-container img {
+    width: 20em;
+    border-radius: 15px;
+}
+
+.exp-3 p {
+    font-size: 1em;
+}
+
+.exp .exp-4 {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.exp-4-img-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Two equal columns */
+    align-items: center; /* Vertically aligns the images */
+    gap: 2em; /* Space between images */
+    margin-bottom: 1rem;
+  }
+
+.exp-4 h3 {
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 3rem;
+}
+
+.exp-4-img-container img {
+    height: 20em; /* Or use the height of your landscape image */
+    object-fit: cover;
+  }
+
+.exp-4 p {
+    font-size: 1em;
+}
+
+.footer h2 {
+    text-align: center;
+}
 /* Mobile Styles */
 @media (max-width: 768px) {
     .nav-links {
@@ -342,5 +496,14 @@ body {
     /*----------about me----------*/
     .about-me-container-school {
         transform: scale(0.9);
+    }
+
+    /*----------exp----------*/
+    .exp-1-img-container, .exp-2-img-container, .exp-3-img-container, .exp-4-img-container {
+        display: grid;
+        grid-template-columns: auto auto; /* Two equal columns */
+        align-items: center; /* Vertically aligns the images */
+        gap: 2em; /* Space between images */
+        margin-bottom: 1rem;
     }
 }
