@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #e9e9e9;
+    background-color: #ffffff;
 }
 
 .logo {
@@ -69,7 +69,7 @@ body {
     flex-wrap: wrap-reverse;
     justify-content: center;
     gap: 10rem;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 .home .img-name {
